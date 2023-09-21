@@ -18,7 +18,7 @@ with DAG(
     catchup = False,
     tags = ['example'],
 ) as dag:
-    # Task
+    
     t1 = PostgresOperator(
         task_id = 'create_log_table',
         postgres_conn_id = 'tutorial_pg_conn',
